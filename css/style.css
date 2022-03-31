@@ -3,6 +3,28 @@
     --ms-btn-secondary-color: #cd3d0f;
 }
 /* COMMON */
+.ms_jumbotron {
+    color: white;
+    background-color: rgb(61, 61, 61);
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.ms_jumbotron h2 {
+    margin-bottom: 30px;
+}
+
+.ms_jumbotron p {
+    margin-bottom: 30px;
+}
+/* media query jumotron text width */
+@media all and (min-width: 992px) {
+    .ms_jumbotron p {
+        width: 40%;
+    }
+}
+
+/* btn default settings */
 .ms_btn {
     border-radius: 20px;
     border: 1px solid transparent;
@@ -26,6 +48,7 @@
     background-color: var(--ms-btn-secondary-color)
 }
 
+/* sections titles */
 .ms_section_title {
     font-size: 2em;
     text-align: center;
@@ -57,28 +80,11 @@ header {
     background-color: whitesmoke;
 }
 
-/* JUMBOTRON */
-.ms_jumbotron {
-    color: white;
-    background-color: rgb(61, 61, 61);
+/* FIRST JUMBOTRON */
+.ms_jumbotron.first {
     padding-top: 350px;
-    padding-bottom: 50px;
-    margin-bottom: 40px;
 }
-
-.ms_jumbotron h2 {
-    margin-bottom: 30px;
-}
-
-.ms_jumbotron p {
-    margin-bottom: 30px;
-}
-
-@media all and (min-width: 992px) {
-    .ms_jumbotron p {
-        width: 40%;
-    }
-}
+/* /FIRST JUMBOTRON */
 
 /* MAIN */
 /* first section */
@@ -96,6 +102,9 @@ header {
 /* /first section */
 
 /* ps5 section */
+.ms_ps5_section {
+    margin-bottom: 20px;
+}
 .ms_ps5_section .ms_no_limits {
     text-align: center;
     text-transform: uppercase;
@@ -130,5 +139,11 @@ header {
 }
 
 /* /ps5 section */
+
+/* second jumbotron */
+.ms_jumbotron.second {
+    padding-top: 200px;
+}
+/* /second jumbotron */
 
 /* /MAIN */
