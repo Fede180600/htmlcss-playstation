@@ -2,7 +2,6 @@
     --ms-btn-primary-color: #2d64e6;
     --ms-btn-secondary-color: #cd3d0f;
 }
-
 /* COMMON */
 .ms_btn {
     border-radius: 20px;
@@ -17,9 +16,23 @@
     padding: 3px 6px;
 }
 
+.ms_btn_primary_color {
+    background-color: var(--ms-btn-primary-color);
+    color: white;
+}
+
 .ms_btn_secondary_color {
     color: white;
     background-color: var(--ms-btn-secondary-color)
+}
+
+.ms_section_title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 /* HEADER */
 header {
@@ -71,6 +84,7 @@ header {
 /* first section */
 .ms_first_section {
     padding: 0 5px;
+    margin-bottom: 100px;
 }
 .ms_first_section_img_container {
     border-radius: 15px;
@@ -80,4 +94,41 @@ header {
     background-color:rgb(104, 104, 104)
 }
 /* /first section */
+
+/* ps5 section */
+.ms_ps5_section .ms_no_limits {
+    text-align: center;
+    text-transform: uppercase;
+    color: #1e83d4;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.ms_ps5_col_text_title{
+    text-align: left;
+}
+
+.ms_ps5_col_img {
+    width: 100%;
+    
+    /* TEST */
+    height: 400px;
+    background-color: #007add;
+}
+
+.ms_ps5_gallery_card {
+    width: 100%;
+    /* TEST */
+    background-color: rgb(48, 48, 48);
+    border: 1px solid darkblue;
+}
+
+.ms_ps5_card_top {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #007add;
+}
+
+/* /ps5 section */
+
 /* /MAIN */
