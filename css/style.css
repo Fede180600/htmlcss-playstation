@@ -1,10 +1,34 @@
+:root {
+    --ms-btn-primary-color: #2d64e6;
+    --ms-btn-secondary-color: #cd3d0f;
+}
+
 /* COMMON */
+.ms_btn {
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
 
+.ms_btn_large {
+    padding: 5px 10px;
+}
 
+.ms_btn_small {
+    padding: 3px 6px;
+}
+
+.ms_btn_secondary_color {
+    color: white;
+    background-color: var(--ms-btn-secondary-color)
+}
 /* HEADER */
 header {
     width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
     /* TEST */
     background-color: chocolate;
@@ -18,4 +42,20 @@ header {
 .ms_header_bottom {
     height: 65px;
     background-color: whitesmoke;
+}
+
+/* JUMBOTRON */
+.ms_jumbotron {
+    color: white;
+    background-color: rgb(61, 61, 61);
+    padding-top: 350px;
+    padding-bottom: 100px;
+}
+
+.ms_jumbotron h2 {
+    margin-bottom: 30px;
+}
+
+.ms_jumbotron p {
+    margin-bottom: 30px;
 }
