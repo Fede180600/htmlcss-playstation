@@ -49,7 +49,8 @@ header {
     color: white;
     background-color: rgb(61, 61, 61);
     padding-top: 350px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .ms_jumbotron h2 {
@@ -65,3 +66,18 @@ header {
         width: 40%;
     }
 }
+
+/* MAIN */
+/* first section */
+.ms_first_section {
+    padding: 0 5px;
+}
+.ms_first_section_img_container {
+    border-radius: 15px;
+
+    /* TEST */
+    height: 150px;
+    background-color:rgb(104, 104, 104)
+}
+/* /first section */
+/* /MAIN */
