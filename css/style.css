@@ -59,3 +59,9 @@ header {
 .ms_jumbotron p {
     margin-bottom: 30px;
 }
+
+@media all and (min-width: 992px) {
+    .ms_jumbotron p {
+        width: 40%;
+    }
+}
