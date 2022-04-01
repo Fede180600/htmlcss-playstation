@@ -54,6 +54,7 @@ img {
 
 .ms_btn_small {
     padding: 3px 6px;
+    font-size: .95rem;
 }
 
 .ms_btn_primary_color {
@@ -66,6 +67,11 @@ img {
     background-color: var(--ms-btn-secondary-color)
 }
 
+/* button custom jumobtron 1 style 2 */
+.ms_btn_custom1 {
+    color: var(--ms-btn-primary-color);
+    background-color: #d9dadc;
+}
 /* sections titles */
 .ms_section_title {
     font-size: 2em;
@@ -208,7 +214,7 @@ header {
 
 /* PS4 section */
 .ms_ps4_section {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .ms_ps4_section p {
     color: gray;
@@ -237,8 +243,55 @@ header {
  
 /* first jumbotron style 2 */
 .ms_jumbotron.first.style2 {
-    background-color: #bebcbb;
     padding: 0;
+    background-color: #bebcbb;
+    min-height: 320px;
+    margin-bottom: 200px;
+}
+
+.ms_jumbotron_col_text {
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+}
+
+.ms_jumbotron_col_text .ms_ps_logo_container {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.ms_jumbotron_col_text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.ms_jumbotron_img_container {
+    height: 35vw;
+    min-height: 320px;
+    max-height: 430px;
+    width: 100%;
+    display: none;
+}
+
+
+.ms_jumbotron_img_container img {
+    height: 100%;
+    width: auto;
+}
+
+@media all and (min-width: 768px) {
+    .ms_jumbotron_col_text .ms_ps_logo_container {
+        width: 100%;
+    }
+
+    .ms_jumbotron_img_container {
+        display: block;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .ms_jumbotron_col_text .ms_ps_logo_container {
+        width: 60%;
+    }
 }
 /* /first jumbotron style 2 */
 
