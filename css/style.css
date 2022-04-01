@@ -35,11 +35,55 @@ img {
 
 /* jumbotron style 2 */
 .ms_jumbotron.style2 {
-    padding: 30px 5px;
+    padding: 0;
+    min-height: 320px;
+}
+
+.ms_jumbotron_col_text {
+    padding-top: 50px;
+}
+
+.ms_jumbotron_col_text .ms_ps_logo_container {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.ms_jumbotron_col_text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .ms_jumbotron_img_container {
+    height: 35vw;
+    min-height: 320px;
+    max-height: 450px;
     width: 100%;
+    display: none;
+}
+
+.ms_jumbotron_img_container img {
+    height: 100%;
+    width: auto;
+}
+
+@media all and (min-width: 768px) {
+    .ms_jumbotron_col_text {
+        padding-top: 30px;
+    }
+
+    .ms_jumbotron_col_text .ms_ps_logo_container {
+        width: 100%;
+    }
+    
+    .ms_jumbotron_img_container {
+        display: block;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .ms_jumbotron_col_text .ms_ps_logo_container {
+        width: 60%;
+    }
 }
 
 /* btn default settings */
@@ -71,6 +115,12 @@ img {
 .ms_btn_custom1 {
     color: var(--ms-btn-primary-color);
     background-color: #d9dadc;
+}
+/* button custom jumbotron 2 style 2 */
+.ms_btn_custom2 {
+    color: black;
+    background-color: whitesmoke;
+
 }
 /* sections titles */
 .ms_section_title {
@@ -243,63 +293,17 @@ header {
  
 /* first jumbotron style 2 */
 .ms_jumbotron.first.style2 {
-    padding: 0;
     background-color: #bebcbb;
-    min-height: 320px;
-    margin-bottom: 50px;
-}
+    margin-bottom: 70px;
 
-.ms_jumbotron_col_text {
-    padding-top: 50px;
-    /* padding-bottom: 50px; */
-}
-
-.ms_jumbotron_col_text .ms_ps_logo_container {
-    width: 60%;
-    margin-bottom: 20px;
-}
-
-.ms_jumbotron_col_text p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-.ms_jumbotron_img_container {
-    height: 35vw;
-    min-height: 320px;
-    max-height: 450px;
-    width: 100%;
-    display: none;
-}
-
-
-.ms_jumbotron_img_container img {
-    height: 100%;
-    width: auto;
-}
-
-@media all and (min-width: 768px) {
-    .ms_jumbotron_col_text {
-        padding-top: 30px;
-    }
-
-    .ms_jumbotron_col_text .ms_ps_logo_container {
-        width: 100%;
-    }
-    
-    .ms_jumbotron_img_container {
-        display: block;
-    }
-}
-
-@media all and (min-width: 992px) {
-    .ms_jumbotron_col_text .ms_ps_logo_container {
-        width: 60%;
-    }
 }
 /* /first jumbotron style 2 */
 
 /* Play Store new sales section */
+.ms_play_store_sales {
+    margin-bottom: 80px;
+}
+
 .ms_play_store_sales p {
     width: 80%;
     margin: 0 auto 40px;
@@ -314,5 +318,14 @@ header {
     background-color: #2e4d66;
 }
 /* /Play Store new sales section */
+
+/* second jumbotron style 2 */
+.ms_jumbotron.second.style2 {
+    background-color: #161c3b;
+    color: white;
+    margin-bottom: 80px;
+}
+/* /second jumbotron style 2 */
+
 
 /* /MAIN */
