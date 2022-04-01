@@ -24,6 +24,7 @@ img {
 
 .ms_jumbotron.style1 p {
     margin-bottom: 30px;
+    font-size: 1.2rem;
 }
 /* media query jumotron text width */
 @media all and (min-width: 992px) {
@@ -140,6 +141,10 @@ header {
     font-weight: 600;
 }
 
+.ms_ps5_col_text_content p {
+    font-size: 1.2rem;
+}
+
 .ms_ps5_col_text_title{
     text-align: left;
 }
@@ -173,12 +178,17 @@ header {
 }
 /* /second jumbotron style 1 */
 
-/* new releases sectio */
+/* new releases section */
 .ms_new_releases {
     background-color: rgb(54, 57, 87);
+    color: white;
     padding-top: 20px;
     padding-bottom: 30px;
     margin-bottom: 50px;
+}
+
+.ms_new_releases .container>p {
+    font-size: 1.2rem;
 }
 .ms_new_releases_card_top {
     width: 100%;
@@ -191,9 +201,10 @@ header {
 
 .ms_new_releases_card_bottom {
     color: white;
-    font-size: .8rem;
+    font-size: 1rem;
 }
-/* /new releases sectio */
+
+/* /new releases section */
 
 /* PS4 section */
 .ms_ps4_section {
@@ -201,6 +212,7 @@ header {
 }
 .ms_ps4_section p {
     color: gray;
+    font-size: 1.2rem;
 }
 
 .ms_text_center{
