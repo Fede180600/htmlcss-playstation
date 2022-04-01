@@ -267,7 +267,7 @@ header {
 .ms_jumbotron_img_container {
     height: 35vw;
     min-height: 320px;
-    max-height: 430px;
+    max-height: 450px;
     width: 100%;
     display: none;
 }
@@ -279,10 +279,14 @@ header {
 }
 
 @media all and (min-width: 768px) {
+    .ms_jumbotron_col_text {
+        padding-top: 30px;
+    }
+
     .ms_jumbotron_col_text .ms_ps_logo_container {
         width: 100%;
     }
-
+    
     .ms_jumbotron_img_container {
         display: block;
     }
