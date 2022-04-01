@@ -341,7 +341,6 @@ header {
 
 .ms_socials_container {
     width: 100%;
-    /* height: 400px; */
     margin-bottom: 80px;
 }
 
@@ -353,3 +352,37 @@ header {
 /* /social network section */
 
 /* /MAIN */
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: #00439c;
+    color: white;
+}
+
+/* footer top */
+.ms_logo_ps_img_container{
+    width: 30%;
+    padding-top: 40px;
+    margin-bottom: 5px;
+}
+
+img.ms_globe_img_footer_top {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.ms_footer_top_main_content_bottom>span {
+    vertical-align: middle;
+    font-size: .8rem;
+}
+/* /footer top */
+
+/* footer bottom */
+
+/* /footer bottom */
+
+/* /FOOTER */
