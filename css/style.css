@@ -357,7 +357,7 @@ header {
 footer {
     width: 100%;
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     background-color: #00439c;
     color: white;
 }
@@ -368,8 +368,8 @@ footer {
 
 }
 .ms_logo_ps_img_container{
-    width: 30%;
-    margin-bottom: 5px;
+    width: 130px;
+    margin-bottom: 30px;
 }
 
 img.ms_globe_img_footer_top {
@@ -398,7 +398,20 @@ img.ms_globe_img_footer_top {
 /* /footer top */
 
 /* footer bottom */
+.ms_footer_bottom_img_container {
+    width: 130px;
+    margin-bottom: 10px;
+}
 
+.ms_footer_bottom p {
+    font-size: .8rem;
+}
+
+@media all and (min-width: 992px) {
+    .ms_footer_bottom p {
+        width: 50%;
+    }
+}
 /* /footer bottom */
 
 /* /FOOTER */
