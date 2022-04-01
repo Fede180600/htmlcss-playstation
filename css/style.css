@@ -246,7 +246,7 @@ header {
     padding: 0;
     background-color: #bebcbb;
     min-height: 320px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 .ms_jumbotron_col_text {
@@ -298,5 +298,21 @@ header {
     }
 }
 /* /first jumbotron style 2 */
+
+/* Play Store new sales section */
+.ms_play_store_sales p {
+    width: 80%;
+    margin: 0 auto 40px;
+    text-align: center;
+    color:rgb(104, 104, 104);
+    font-size: 1rem;
+}
+
+.ms_item_discounted {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #2e4d66;
+}
+/* /Play Store new sales section */
 
 /* /MAIN */
