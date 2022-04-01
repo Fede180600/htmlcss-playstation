@@ -3,7 +3,14 @@
     --ms-btn-secondary-color: #cd3d0f;
 }
 /* COMMON */
-.ms_jumbotron {
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+img {
+    width: 100%;
+}
+/* jumbotron style 1 */
+.ms_jumbotron.style1 {
     color: white;
     padding-bottom: 50px;
 
@@ -11,18 +18,27 @@
     background-color: rgb(61, 61, 61);
 }
 
-.ms_jumbotron h2 {
+.ms_jumbotron.style1 h2 {
     margin-bottom: 30px;
 }
 
-.ms_jumbotron p {
+.ms_jumbotron.style1 p {
     margin-bottom: 30px;
 }
 /* media query jumotron text width */
 @media all and (min-width: 992px) {
-    .ms_jumbotron p {
+    .ms_jumbotron.style1 p {
         width: 40%;
     }
+}
+
+/* jumbotron style 2 */
+.ms_jumbotron.style2 {
+    padding: 30px 5px;
+}
+
+.ms_jumbotron_img_container {
+    width: 100%;
 }
 
 /* btn default settings */
@@ -55,7 +71,12 @@
     text-align: center;
 }
 
-.mb-20 {
+.ms_section_title span {
+    font-size: .7rem;
+    vertical-align: super;
+}
+
+.mb_20 {
     margin-bottom: 20px;
 }
 /* HEADER */
@@ -76,17 +97,21 @@ header {
     background-color: black;
 }
 
+.ms_header_top img {
+    width: 5rem;
+}
+
 .ms_header_bottom {
     height: 65px;
     background-color: whitesmoke;
 }
 
-/* FIRST JUMBOTRON */
-.ms_jumbotron.first {
+/* FIRST JUMBOTRON STYLE 1*/
+.ms_jumbotron.first.style1 {
     padding-top: 350px;
     margin-bottom: 40px;
 }
-/* /FIRST JUMBOTRON */
+/* /FIRST JUMBOTRON STYLE 1*/
 
 /* MAIN */
 /* first section */
@@ -121,7 +146,7 @@ header {
 
 .ms_ps5_col_img {
     width: 100%;
-    
+
     /* TEST */
     height: 400px;
     background-color: #007add;
@@ -142,30 +167,67 @@ header {
 
 /* /ps5 section */
 
-/* second jumbotron */
-.ms_jumbotron.second {
+/* second jumbotron style 1 */
+.ms_jumbotron.second.style1 {
     padding-top: 200px;
 }
-/* /second jumbotron */
+/* /second jumbotron style 1 */
 
 /* new releases sectio */
 .ms_new_releases {
     background-color: rgb(54, 57, 87);
     padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
 }
 .ms_new_releases_card_top {
     width: 100%;
     padding-top: 100%;
-    border-radius: 10px;    
+    border-radius: 10px;
     margin-bottom: 10px;
     /* TEST */
     background-color: rgb(127, 136, 175);
 }
 
 .ms_new_releases_card_bottom {
-    color: white; 
+    color: white;
     font-size: .8rem;
 }
 /* /new releases sectio */
+
+/* PS4 section */
+.ms_ps4_section {
+    margin-bottom: 50px;
+}
+.ms_ps4_section p {
+    color: gray;
+}
+
+.ms_text_center{
+    text-align: center;
+}
+
+.ms_ps4_card_item {
+    padding: 0 10px 30px;
+    /* TEST */
+    border-radius: 20px;
+    background-color:rgb(157, 161, 255)
+}
+
+.ms_ps4_card_item_top {
+    padding: 100px 0;
+    /* TEST */
+    border-radius: 20px;
+    background-color: #4c4ec0;
+}
+
+/* /PS4 section */
+ 
+/* first jumbotron style 2 */
+.ms_jumbotron.first.style2 {
+    background-color: #bebcbb;
+    padding: 0;
+}
+/* /first jumbotron style 2 */
 
 /* /MAIN */
