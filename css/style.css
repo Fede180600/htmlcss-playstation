@@ -51,7 +51,7 @@ img {
 
 .ms_jumbotron_col_text p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .ms_jumbotron_img_container {
@@ -282,6 +282,7 @@ header {
 .ms_ps5_card_bottom>p {
     text-align: center;
     margin-bottom: 0;
+    border-bottom: 2px solid transparent;
     color: black;
     font-size: .9rem;
     transition: all .5s;
@@ -372,27 +373,19 @@ h4.ms_new_releases_title {
 .ms_ps4_section {
     margin-bottom: 100px;
 }
-.ms_ps4_section p {
+.ms_ps4_section p.ms_text_center{
+    color: gray;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.ms_ps4_section p{
     color: gray;
     font-size: 1.2rem;
 }
 
 .ms_text_center{
     text-align: center;
-}
-
-.ms_ps4_card_item {
-    padding: 0 10px 30px;
-    /* TEST */
-    border-radius: 20px;
-    background-color:rgb(157, 161, 255)
-}
-
-.ms_ps4_card_item_top {
-    padding: 100px 0;
-    /* TEST */
-    border-radius: 20px;
-    background-color: #4c4ec0;
 }
 
 /* /PS4 section */
@@ -425,8 +418,6 @@ h4.ms_new_releases_title {
 
 .ms_item_discounted {
     width: 100%;
-    padding-top: 100%;
-    background-color: #2e4d66;
 }
 /* /Play Store new sales section */
 
@@ -452,8 +443,6 @@ h4.ms_new_releases_title {
 
 .ms_social_icon {
     width: 100%;
-    padding-top: 100%;
-    border: 1px solid orangered;
 }
 /* /social network section */
 
