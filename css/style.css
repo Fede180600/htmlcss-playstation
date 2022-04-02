@@ -12,10 +12,12 @@ img {
 /* jumbotron style 1 */
 .ms_jumbotron.style1 {
     color: white;
-    padding-bottom: 50px;
-
-    /* TEST */
-    background-color: rgb(61, 61, 61);
+}
+.ms_jumbotron_logo_container {
+    width: 50%;
+    min-width: 130px;
+    max-width: 280px;
+    margin-bottom: 30px;
 }
 
 .ms_jumbotron.style1 h2 {
@@ -165,8 +167,14 @@ header {
 
 /* FIRST JUMBOTRON STYLE 1*/
 .ms_jumbotron.first.style1 {
-    padding-top: 350px;
+    padding-top: 400px;
+    padding-bottom: 50px;
     margin-bottom: 40px;
+    margin-top: 100px;
+    background-image: url(../img/jumbo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* /FIRST JUMBOTRON STYLE 1*/
 
@@ -178,16 +186,37 @@ header {
 }
 .ms_first_section_img_container {
     border-radius: 15px;
-
+    overflow: hidden;
+    padding: 1px;
+    border: 2px solid transparent;
+    transition: all .3s;
     /* TEST */
-    height: 150px;
-    background-color:rgb(104, 104, 104)
+    /* height: 200px; */
+    /* background-color:rgb(104, 104, 104) */
+}
+
+.ms_first_section_img_container:hover {
+    padding: 1px;
+    border: 2px solid #0876cf;
+    position: relative;
+    bottom: 10px;
+}
+
+.ms_first_section_img_container img {
+    border-radius: 15px;
 }
 /* /first section */
 
 /* ps5 section */
 .ms_ps5_section {
     margin-bottom: 20px;
+}
+
+.ms_ps5_section p {
+    color:rgb(104, 104, 104);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
 }
 .ms_ps5_section .ms_no_limits {
     text-align: center;
@@ -199,33 +228,79 @@ header {
 
 .ms_ps5_col_text_content p {
     font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .ms_ps5_col_text_title{
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .ms_ps5_col_img {
     width: 100%;
 
     /* TEST */
-    height: 400px;
-    background-color: #007add;
+    /* height: 400px; */
+    /* background-color: #007add; */
 }
 
 .ms_ps5_gallery_card {
     width: 100%;
+    padding-bottom: 0;
     /* TEST */
-    background-color: rgb(48, 48, 48);
-    border: 1px solid darkblue;
+    /* background-color: rgb(48, 48, 48); */
 }
 
 .ms_ps5_card_top {
     width: 100%;
-    padding-top: 100%;
-    background-color: #007add;
+    position: relative;
 }
 
+.ms_layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.308);
+    transition: all .5s;    
+}
+
+.ms_ps5_gallery_card:hover .ms_layover {
+    background-color: transparent;
+    border-bottom: 3px solid #007add;
+}
+
+.ms_ps5_card_bottom>p {
+    text-align: center;
+    margin-bottom: 0;
+    color: black;
+    font-size: .9rem;
+    transition: all .5s;
+    display: none;
+}
+
+.ms_ps5_gallery_card:hover .ms_ps5_card_bottom>p {
+    border-bottom: 2px solid #007add;
+}
+
+@media all and (min-width: 768px) {
+    .ms_ps5_gallery_card:hover .ms_layover {
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .ms_ps5_card_top {
+        width: 60%;
+        margin: 0 auto 5px;
+    }
+
+    .ms_ps5_card_bottom>p {
+        display: block;
+    }
+}
 /* /ps5 section */
 
 /* second jumbotron style 1 */
