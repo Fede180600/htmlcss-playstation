@@ -13,15 +13,11 @@ img {
 .ms_jumbotron.style1 {
     color: white;
 }
-.ms_jumbotron_logo_container {
-    width: 50%;
-    min-width: 130px;
-    max-width: 280px;
-    margin-bottom: 30px;
-}
+
 
 .ms_jumbotron.style1 h2 {
     margin-bottom: 30px;
+    font-size: 2.4rem;
 }
 
 .ms_jumbotron.style1 p {
@@ -30,6 +26,9 @@ img {
 }
 /* media query jumotron text width */
 @media all and (min-width: 992px) {
+    .ms_jumbotron.style1 h2 {
+        width: 40%;
+    }
     .ms_jumbotron.style1 p {
         width: 40%;
     }
@@ -168,13 +167,20 @@ header {
 /* FIRST JUMBOTRON STYLE 1*/
 .ms_jumbotron.first.style1 {
     padding-top: 400px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     margin-bottom: 40px;
     margin-top: 100px;
     background-image: url(../img/jumbo-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.ms_jumbotron.first.style1 .ms_jumbotron_logo_container {
+    width: 60%;
+    min-width: 150px;
+    max-width: 280px;
+    margin-bottom: 30px;
 }
 /* /FIRST JUMBOTRON STYLE 1*/
 
@@ -305,17 +311,43 @@ header {
 
 /* second jumbotron style 1 */
 .ms_jumbotron.second.style1 {
-    padding-top: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ms_jumbotron.second.style1 .ms_jumbotron_logo_container {
+    width: 60%;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+@media all and (min-width: 992px) {
+    .ms_jumbotron.second.style1 {
+        padding-top: 50px;
+    }
+
+    .ms_jumbotron.second.style1 .ms_jumbotron_logo_container {
+        width: 20%;
+        margin-bottom: 80px;
+    }
 }
 /* /second jumbotron style 1 */
 
 /* new releases section */
 .ms_new_releases {
-    background-color: rgb(54, 57, 87);
+    background-color: #1f1f1f;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     margin-bottom: 50px;
+}
+
+h4.ms_new_releases_title {
+    font-size: 1.8rem;
 }
 
 .ms_new_releases .container>p {
@@ -323,11 +355,10 @@ header {
 }
 .ms_new_releases_card_top {
     width: 100%;
-    padding-top: 100%;
     border-radius: 10px;
+    overflow: hidden;
     margin-bottom: 10px;
     /* TEST */
-    background-color: rgb(127, 136, 175);
 }
 
 .ms_new_releases_card_bottom {
