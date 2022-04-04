@@ -93,6 +93,7 @@ img {
     border: 1px solid transparent;
 }
 
+
 .ms_btn_large {
     padding: 5px 10px;
 }
@@ -107,9 +108,19 @@ img {
     color: white;
 }
 
+.ms_btn_primary_color:hover {
+    outline: 3px solid black;
+    outline-offset: 0;
+}
+
 .ms_btn_secondary_color {
     color: white;
     background-color: var(--ms-btn-secondary-color)
+}
+
+.ms_btn_secondary_color:hover {
+    outline: 3px solid red;
+    outline-offset: 0;
 }
 
 /* button custom jumobtron 1 style 2 */
@@ -140,16 +151,12 @@ img {
 /* HEADER */
 header {
     width: 100%;
-    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-
-    /* TEST */
-    background-color: chocolate;
 }
-
+/* header top */
 .ms_header_top {
     height: calc(100% - 65px);
     background-color: black;
@@ -158,18 +165,26 @@ header {
 .ms_header_top img {
     width: 5rem;
 }
-
-.ms_header_bottom {
-    height: 65px;
-    background-color: whitesmoke;
+/* header-bottom */
+.ms_navbar_color {
+    background-color: white;
 }
+
+.dropdown-toggle:after {
+    display: none;
+}
+
+.ms_chevron_down {
+    width: 10px;
+}
+
 
 /* FIRST JUMBOTRON STYLE 1*/
 .ms_jumbotron.first.style1 {
-    padding-top: 400px;
+    padding-top: 300px;
     padding-bottom: 80px;
     margin-bottom: 40px;
-    margin-top: 100px;
+    margin-top: 108px;
     background-image: url(../img/jumbo-bg.png);
     background-position: center;
     background-repeat: no-repeat;
